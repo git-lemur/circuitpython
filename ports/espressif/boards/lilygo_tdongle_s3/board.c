@@ -7,8 +7,10 @@
 #include "supervisor/board.h"
 #include "mpconfigboard.h"
 #include "shared-bindings/microcontroller/Pin.h"
-// #include "shared-module/displayio/__init__.h"
-// #include "shared-module/displayio/mipi_constants.h"
+#include "shared-module/displayio/__init__.h"
+#include "shared-module/displayio/mipi_constants.h"
+
+// TODO: Add the display init sequence possible sources: adafruit ST7735R driver or micropython library
 
 // #define DELAY 0x80
 
@@ -98,8 +100,8 @@
 // }
 
 bool espressif_board_reset_pin_number(gpio_num_t pin_number) {
-    // Override the I2C/TFT power pin reset to prevent resetting the display.
-    if (pin_number == 15) {
+    // Override the I2C/TFT power pin reset to prevent resetting the display. (not sure if needed on T-Dongle, but left in place and switched to TFT_LED_PIN)
+    if (pin_number == 38) {
         // Turn on TFT
         config_pin_as_output_with_level(pin_number, true);
         return true;
