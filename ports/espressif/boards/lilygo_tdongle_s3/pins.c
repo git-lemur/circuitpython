@@ -52,8 +52,8 @@ static const mp_rom_map_elem_t board_module_globals_table[] = {
     { MP_ROM_QSTR(MP_QSTR_USB_DN), MP_ROM_PTR(&pin_GPIO19) },       // USB_DN pin_GPIO19
     { MP_ROM_QSTR(MP_QSTR_USB_DP), MP_ROM_PTR(&pin_GPIO20) },       // USB_DP pin_GPIO20
 
-    { MP_ROM_QSTR(MP_QSTR_LED_DI_PIN), MP_ROM_PTR(&pin_GPIO40) },   // LED_DI_PIN pin_GPIO40 // APA102 LED
-    { MP_ROM_QSTR(MP_QSTR_LED_CI_PIN), MP_ROM_PTR(&pin_GPIO39) },   // LED_CI_PIN pin_GPIO39 // APA102 LED
+    { MP_ROM_QSTR(MP_QSTR_LED_DI_PIN), MP_ROM_PTR(&pin_GPIO40) },   // LED_DI_PIN pin_GPIO40 // Dotstar APA102 LED
+    { MP_ROM_QSTR(MP_QSTR_LED_CI_PIN), MP_ROM_PTR(&pin_GPIO39) },   // LED_CI_PIN pin_GPIO39 // DotStar APA102 LED
 
     { MP_ROM_QSTR(MP_QSTR_TFT_CS_PIN), MP_ROM_PTR(&pin_GPIO4) },    // TFT_CS_PIN pin_GPIO4
     { MP_ROM_QSTR(MP_QSTR_TFT_SDA_PIN), MP_ROM_PTR(&pin_GPIO3) },   // TFT_SDA_PIN pin_GPIO3
