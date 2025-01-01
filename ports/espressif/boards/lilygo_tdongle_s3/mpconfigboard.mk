@@ -1,5 +1,5 @@
 USB_VID = 0x303a
-USB_PID = 0x813F
+USB_PID = 0x813F    // unsure if this needs to change
 USB_PRODUCT = "T-Dongle S3"
 USB_MANUFACTURER = "LILYGO"
 
